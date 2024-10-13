@@ -1,15 +1,36 @@
 /* Add your code in each class */
 body {
+  background-color: rgb(97, 13, 176);
 }
 .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
 }
 .movie-card {
+  position: relative;
+  justify-content: flex-start;
 }
 .movie-image {
+  height: 400px;
+  width: 400px;
+  background-image: url("../assets/harrypotter.jpg");
+  object-fit: cover;
+  object-position: 0 0;
+  z-index: -1;
 }
 .movie-details-container {
+  position: absolute;
+  text-align: left;
+  height: 400px;
+  width: 400px;
+  top: 0;
 }
 .descriptions {
+  position: relative;
+  color: white;
+  top: 75%;
+  left: 2%;
 }
 
 /*A gift from us!*/
@@ -28,4 +49,6 @@ body {
   );
 }
 .movie-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
 }
